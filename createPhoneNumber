@@ -5,4 +5,4 @@ function createPhoneNumber(phoneNumber){
     num.splice(7,0,'-');
     console.log(num.join(''));
 }
-createPhoneNumber(1234567890);
+createPhoneNumber(1234567890); 
