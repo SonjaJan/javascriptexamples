@@ -3,6 +3,6 @@ function createPhoneNumber(phoneNumber){
     num = phoneNumber.toString().split('');
     num.splice(3,0,'-');
     num.splice(7,0,'-');
-    console.log(num.join(''));
+    return num.join('');
 }
-createPhoneNumber(1234567890); 
+console.log(createPhoneNumber(1234567890));
