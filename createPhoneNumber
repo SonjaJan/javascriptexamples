@@ -1,0 +1,8 @@
+function createPhoneNumber(phoneNumber){
+    var num = [];
+    num = phoneNumber.toString().split('');
+    num.splice(3,0,'-');
+    num.splice(7,0,'-');
+    console.log(num.join(''));
+}
+createPhoneNumber(1234567890);
