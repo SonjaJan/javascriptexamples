@@ -1,0 +1,18 @@
+function isBalanced(str){
+  let strArr = str.split('');
+  let newArr = [];
+
+  for(let i in strArr){
+    if(strArr[i] != '[' || strArr[i] != '{' || strArr[i] != '(' ){
+      newArr.push(strArr[i]);
+    }else{
+      let bracket = newArr.pop();
+      if( bracket != strArr[i]) 
+      return false;
+    }
+  }
+  
+ return true;
+}
+console.log(isBalanced('{[()]}'));
+console.log(isBalanced('{[()]]}'));
