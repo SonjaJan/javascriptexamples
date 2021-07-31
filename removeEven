@@ -1,0 +1,9 @@
+function removeEven(arr){
+  let odd = [];
+  for(let i in arr){
+    if(arr[i]%2!=0) 
+      odd.push(arr[i]);
+  }
+  return odd;
+}
+console.log(removeEven([22,35,21,44])); 
